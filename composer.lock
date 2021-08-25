@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6cadd819a6415b190ae2704ced6e6c8b",
+    "content-hash": "17b4d83be1d4e1960c0c174722a69bd6",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1526,6 +1526,107 @@
             "time": "2021-01-18T20:58:21+00:00"
         },
         {
+            "name": "lioneagle/le-core",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lioneaglesolutions/le-core.git",
+                "reference": "43c9669fe5b7b8eb26ca5940a930286d96ce0078"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lioneaglesolutions/le-core/zipball/43c9669fe5b7b8eb26ca5940a930286d96ce0078",
+                "reference": "43c9669fe5b7b8eb26ca5940a930286d96ce0078",
+                "shasum": ""
+            },
+            "require": {
+                "lioneagle/le-utils": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Lioneagle\\LeCore\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "James Mooring",
+                    "email": "james@lioneagle.solutions"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/lioneaglesolutions/le-core/issues",
+                "source": "https://github.com/lioneaglesolutions/le-core/tree/v1.0.0"
+            },
+            "time": "2021-08-24T07:29:44+00:00"
+        },
+        {
+            "name": "lioneagle/le-utils",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lioneaglesolutions/le-utils.git",
+                "reference": "152c5e8be0ab927c9feda4859d02d3bc73f7c7fc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lioneaglesolutions/le-utils/zipball/152c5e8be0ab927c9feda4859d02d3bc73f7c7fc",
+                "reference": "152c5e8be0ab927c9feda4859d02d3bc73f7c7fc",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^8.55",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "brianium/paratest": "^6.3",
+                "nunomaduro/collision": "^5.3",
+                "orchestra/testbench": "^6.15",
+                "phpunit/phpunit": "^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Lioneagle\\LeUtils\\LeUtilsServiceProvider"
+                    ],
+                    "aliases": {
+                        "LeUtils": "Lioneagle\\LeUtils\\LeUtilsFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Lioneagle\\LeUtils\\": "src",
+                    "Lioneagle\\LeUtils\\Database\\Factories\\": "database/factories"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "James Mooring",
+                    "email": "james@lioneagle.solutions",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This is my package LeUtils",
+            "homepage": "https://github.com/lioneagle/le-utils",
+            "keywords": [
+                "laravel",
+                "le-utils",
+                "lioneagle"
+            ],
+            "support": {
+                "issues": "https://github.com/lioneaglesolutions/le-utils/issues",
+                "source": "https://github.com/lioneaglesolutions/le-utils/tree/v1.1.1"
+            },
+            "time": "2021-08-24T07:30:57+00:00"
+        },
+        {
             "name": "monolog/monolog",
             "version": "2.3.2",
             "source": {
@@ -2705,6 +2806,76 @@
                 }
             ],
             "time": "2021-08-11T01:06:55+00:00"
+        },
+        {
+            "name": "spatie/laravel-query-builder",
+            "version": "3.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-query-builder.git",
+                "reference": "4e5257be24139836dc092f618d7c73bcb1c00302"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-query-builder/zipball/4e5257be24139836dc092f618d7c73bcb1c00302",
+                "reference": "4e5257be24139836dc092f618d7c73bcb1c00302",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^6.20.13|^7.30.4|^8.22.2",
+                "illuminate/http": "^6.20.13|7.30.4|^8.22.2",
+                "illuminate/support": "^6.20.13|7.30.4|^8.22.2",
+                "php": "^7.3|^8.0"
+            },
+            "require-dev": {
+                "ext-json": "*",
+                "laravel/legacy-factories": "^1.0.4",
+                "mockery/mockery": "^1.4",
+                "orchestra/testbench": "^4.9|^5.8|^6.3",
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\QueryBuilder\\QueryBuilderServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\QueryBuilder\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Vanderbist",
+                    "email": "alex@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Easily build Eloquent queries from API requests",
+            "homepage": "https://github.com/spatie/laravel-query-builder",
+            "keywords": [
+                "laravel-query-builder",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/laravel-query-builder/issues",
+                "source": "https://github.com/spatie/laravel-query-builder"
+            },
+            "funding": [
+                {
+                    "url": "https://spatie.be/open-source/support-us",
+                    "type": "custom"
+                }
+            ],
+            "time": "2021-07-05T14:17:44+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -7812,5 +7983,5 @@
         "php": "^7.3|^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
